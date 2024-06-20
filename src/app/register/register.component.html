@@ -1,0 +1,46 @@
+<div class="body">
+    <div class="center-container">
+      <!--header-->
+      <div class="header-w3l">
+        <h1>Đăng ký tài khoản</h1>
+      </div>
+      <!--//header-->
+      <div class="main-content-agile">
+        <div class="sub-main-w3">	
+          <div class="wthree-pro">
+            <h2>Register</h2>
+          </div>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="pom-agile">
+              <input placeholder="E-mail" formControlName="email" class="user" type="email" required>
+              <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+              <div *ngIf="registerForm.get('email').invalid && (registerForm.get('email').dirty || registerForm.get('email').touched)" class="invalid-feedback">
+                Vui lòng nhập địa chỉ email hợp lệ.
+              </div>
+            </div>
+            <div class="pom-agile">
+              <input placeholder="Mật khẩu" formControlName="password" class="pass" type="password" required>
+              <span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+              <div *ngIf="registerForm.get('password').invalid && (registerForm.get('password').dirty || registerForm.get('password').touched)" class="invalid-feedback">
+                Vui lòng nhập mật khẩu hợp lệ (ít nhất 6 ký tự).
+              </div>
+            </div>
+            <div class="pom-agile">
+              <input placeholder="Nhập lại mật khẩu" formControlName="password" class="pass" type="password" required>
+              <span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+              <div *ngIf="registerForm.get('password').invalid && (registerForm.get('password').dirty || registerForm.get('password').touched)" class="invalid-feedback">
+                Vui lòng nhập mật khẩu hợp lệ (ít nhất 6 ký tự).
+              </div>
+            </div>
+            <div class="sub-w3l">
+              <div class="right-w3l">
+                <input type="submit" value="Đăng ký">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--//main-->
+    </div>
+  </div>
+  

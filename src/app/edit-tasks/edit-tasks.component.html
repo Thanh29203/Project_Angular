@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+      <div class="col-7 m-auto form-create">
+        <div class="form-create-hq mb-5">
+          <h2 class="my-4">Thêm Mới Nhiệm vụ</h2>
+          <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+            <div class="form-group mb-3">
+              <label for="nametask">Tên nhiệm vụ:</label>
+              <input type="text" class="form-control" id="nametask" formControlName="nametask" placeholder="Nhập tên nhiệm vụ">
+              <div *ngIf="projectForm.get('nametask')?.invalid && projectForm.get('nametask')?.touched" class="text-danger">
+                Tên nhiệm vụ là bắt buộc.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="description">Mô tả:</label>
+              <input type="text" class="form-control" id="description" formControlName="description" placeholder="Nhập mô tả">
+              <div *ngIf="projectForm.get('description')?.invalid && projectForm.get('description')?.touched" class="text-danger">
+                Mô tả là bắt buộc.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="project">Dự án:</label>
+              <select class="form-select" id="project" formControlName="project">
+                <option value="">Chọn dự án</option>
+                <option value="Project 1">Project 1</option>
+                <option value="Project 2">Project 2</option>
+                <option value="Project 3">Project 3</option>
+                <option value="Project 4">Project 4</option>
+              </select>
+              <div *ngIf="projectForm.get('project')?.invalid && projectForm.get('project')?.touched" class="text-danger">
+                Dự án là bắt buộc.
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="assigned">Người được giao:</label>
+              <select class="form-select" id="assigned" formControlName="assigned">
+                <option value="">Chọn người được giao</option>
+                <option value="Nguyễn Văn A">Nguyễn Văn A</option>
+                <option value="Nguyễn Văn B">Nguyễn Văn B</option>
+                <option value="Nguyễn Văn C">Nguyễn Văn C</option>
+                <option value="Nguyễn Văn D">Nguyễn Văn D</option>
+              </select>
+              <div *ngIf="projectForm.get('assigned')?.invalid && projectForm.get('assigned')?.touched" class="text-danger">
+                Người được giao là bắt buộc.
+              </div>
+            </div>
+            <br>
+            <div class="form-group d-flex">
+              <button type="submit" class="btn btn-primary m-auto btn-create">Cập nhật</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

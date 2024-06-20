@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/admin-leader",
+    "/create-project",
+    "/create-task",
+    "/login",
+    "/project",
+    "/register",
+    "/tasks"
+  ]
+}

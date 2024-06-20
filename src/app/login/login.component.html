@@ -1,0 +1,38 @@
+<div class="body">
+    <div class="center-container">
+      <!--header-->
+      <div class="header-w3l">
+        <h1>Đăng Nhập</h1>
+      </div>
+      <!--//header-->
+      <div class="main-content-agile">
+        <div class="sub-main-w3">  
+          <div class="wthree-pro">
+            <h2>Login</h2>
+          </div>
+          <form (ngSubmit)="onSubmit(formLogin)" #formLogin="ngForm">
+            <div class="pom-agile">
+              <input placeholder="E-mail" name="email" class="user" type="email" ngModel required>
+              <span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+            </div>
+            <div class="pom-agile">
+              <input placeholder="Mật khẩu" name="password" class="pass" type="password" ngModel required>
+              <span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
+            </div>
+            
+            <div class="sub-w3l ">
+              <h6> <a href="/register">Đăng ký /</a><a href="#">Quên mật khẩu?</a></h6>
+              <div class="right-w3l">
+                <button class="btn btn-success" type="submit">Đăng nhập</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--//main-->
+      <!--footer-->
+      
+      <!--//footer-->
+    </div>
+  </div>
+  

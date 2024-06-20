@@ -1,1 +1,109 @@
-/* You can add global styles to this file, and also import other style files */
+.logo {
+  padding: 15px;
+}
+.sidebar ul {
+  margin-top: 20px;
+}
+.sidebar span {
+  padding-left: 10px;
+  opacity: 0.7;
+}
+.sidebar .list-group .list-group-item {
+  border: none;
+  background-color: rgb(224, 230, 236);
+  margin-bottom: 15px;
+}
+.content .input-group input {
+  background-color: rgb(224, 230, 236);
+  border: none !important;
+  border-bottom: 1px solid rgb(219, 212, 212) !important;
+  border-radius: 0px;
+  padding-bottom: 15px;
+}
+.icon-search {
+  padding-top: 7px;
+  border-bottom: 1px solid rgb(219, 212, 212);
+}
+
+
+.cart-title {
+  font-weight: 600;
+}
+
+.cart-content {
+  padding-left: 50px !important;
+}
+.townhouse {
+  opacity: 0.5;
+}
+small {
+  opacity: 0.5;
+}
+
+.price {
+  font-size: 25px;
+  color: blue;
+  width: 50%;
+}
+.cart-price {
+  margin-bottom: 0px;
+}
+
+.cart {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  min-height: 100vh;
+}
+
+.cart img {
+  border-radius: 5px;
+}
+
+aside {
+  padding: 20px;
+  background-color: white;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid red;
+}
+
+aside div div {
+  padding: 6px;
+}
+
+.content-info img {
+  object-fit: none; /* Do not scale the image */
+  object-position: center;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+}
+.content-info {
+  padding: 40px 10px 10px 10px;
+}
+
+.btn-detail {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.content-info h4 {
+  margin-top: 20px;
+}
+.content-info .price {
+  margin-top: 20px;
+}
+
+header {
+  margin-bottom: 10px;
+}

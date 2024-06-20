@@ -1,0 +1,13 @@
+.form-create{
+    border: 1px solid rgb(186, 95, 95);
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px rgb(0, 19, 21);
+}
+.form-create-hq{
+    width: 90%; 
+    margin: auto;
+}
+.btn-create{
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgb(255, 100, 3);
+}

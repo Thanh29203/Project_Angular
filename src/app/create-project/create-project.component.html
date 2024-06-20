@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-7 m-auto form-create">
+      <div class="form-create-hq mb-5">
+        <h2 class="my-4">Thêm Mới Project</h2>
+        <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+          <div class="form-group mb-3">
+            <label for="projectName">Tên Dự Án:</label>
+            <input type="text" class="form-control" id="projectName" formControlName="projectName" placeholder="Nhập tên dự án">
+            <div *ngIf="projectForm.get('projectName')?.invalid && projectForm.get('projectName')?.touched" class="text-danger">
+              Tên dự án là bắt buộc.
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="startDate">Ngày Bắt Đầu:</label>
+            <input type="date" class="form-control" id="startDate" formControlName="startDate">
+            <div *ngIf="projectForm.get('startDate')?.invalid && projectForm.get('startDate')?.touched" class="text-danger">
+              Ngày bắt đầu là bắt buộc.
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="teamSize">Kích Thước Nhóm:</label>
+            <input type="number" class="form-control" id="teamSize" formControlName="teamSize" min="1" placeholder="Nhập kích thước nhóm">
+            <div *ngIf="projectForm.get('teamSize')?.invalid && projectForm.get('teamSize')?.touched" class="text-danger">
+              Kích thước nhóm là bắt buộc và phải lớn hơn hoặc bằng 1.
+            </div>
+          </div>
+          <br>
+          <div class="form-group d-flex">
+            <button type="submit" class="btn btn-primary m-auto btn-create">Thêm mới</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
