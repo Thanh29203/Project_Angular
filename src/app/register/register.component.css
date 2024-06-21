@@ -86,7 +86,7 @@ img{max-width:100%;}
     font-size: .9em;
     color: #fff;
     letter-spacing: 1px;
-    text-align: right;
+    margin-left: 100px;
     display: inherit;
 }
 .sub-w3l {
@@ -292,6 +292,7 @@ span.icon2 {
 	.sub-w3l h6 a {
 		font-size: .8em;
 	}
+	
 	.header-w3l h1 {
 		font-size: 2.1em;
 	}
